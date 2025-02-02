@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validation Status</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Modern Validation Errors</title>
+  
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  >
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Validation Status Tracker</h1>
-        <form id="errorForm">
-            <input type="text" id="documentId" placeholder="Document ID" required>
-            <input type="text" id="errorType" placeholder="Error Type" required>
-            <input type="text" id="errorDetails" placeholder="Error Details" required>
-            <button type="submit">Add Error</button>
-        </form>
-        <div id="statusDisplay"></div>
+
+<section class="hero-section text-center d-flex flex-column justify-content-center align-items-center">
+  <h1>Validation Tracking</h1>
+  <p class="lead mb-4">
+    Tracks the failed documents to make your life easier.
+  </p>
+  <button class="btn btn-dark btn-lg scroll-btn">Explore Errors</button>
+</section>
+
+<div class="container py-5">
+  
+  <div class="row mb-4" id="statsRow">
+    <!-- Stats will be dynamically inserted here -->
+  </div>
+
+  <!-- Search / Filter -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="input-group">
+        <span class="input-group-text bg-dark text-white">Filter Error Types</span>
+        <input type="text" class="form-control" id="searchInput" placeholder="e.g. Address mismatch"/>
+      </div>
     </div>
-    <script src="app.js"></script>
+  </div>
+
+
+  <div class="accordion" id="errorTypeAccordion"></div>
+</div>
+
+<!-- Bootstrap Bundle JS (for accordion functionality) -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="app.js"></script>
+
 </body>
 </html>
