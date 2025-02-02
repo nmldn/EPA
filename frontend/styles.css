@@ -1,0 +1,108 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #20524E; /* Dark teal for text */
+  }
+  
+  /* Hero Section with gradient background */
+  .hero-section {
+    min-height: 60vh;
+    width: 100%;
+    background: linear-gradient(135deg, #B9EBE7 0%, #97E1DC 50%, #74D7D0 100%);
+    color: #20524E;
+    position: relative;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+  }
+  
+  .scroll-btn {
+    background-color: #41A49D;
+    border: none;
+  }
+  .scroll-btn:hover {
+    background-color: #317B76;
+  }
+  
+  /* Stats Cards */
+  .stats-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(49, 123, 118, 0.2);
+    color: #20524E;
+  }
+  
+  .stats-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .stats-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  /* Search Input */
+  .input-group-text {
+    background-color: #41A49D;
+    color: #fff;
+    border: none;
+  }
+  
+  /* Container styling to add a subtle backdrop */
+  .container {
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(49, 123, 118, 0.2);
+  }
+  
+  /* Accordion and Buttons */
+  .accordion-button {
+    background-color: #41A49D; 
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .accordion-button:hover, 
+  .accordion-button:focus {
+    background-color: #317B76;
+  }
+  
+  .accordion-button.collapsed {
+    background-color: #41A49D;
+  }
+  
+  .accordion-item {
+    border: none; 
+    margin-bottom: 8px; 
+    border-radius: 8px;
+    overflow: hidden; 
+  }
+  
+  /* Inner accordion body styling */
+  .accordion-body {
+    background-color: #B9EBE7; 
+    color: #20524E;
+    border-top: 2px solid #74D7D0;
+  }
+  
+  .ms-2.text-muted {
+    color: #74D7D0 !important;
+  }
+  
