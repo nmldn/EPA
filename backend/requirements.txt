@@ -3,4 +3,4 @@ uvicorn
 pymongo
 python-dotenv
 pytest
- 
+httpx
